@@ -49,7 +49,7 @@ const Navbar = () => {
 
             <div className={nav?'fixed w-full h-screen bg-black/50 md:hidden':'fixed -left-full'}>
 
-                    <div className='w-[75%] md:w-[60%] lg:w-[45%] h-screen bg-[#ecf0f3] flex flex-col p-10 space-y-8'>
+                    <div className={nav?'w-[75%] md:w-[60%] lg:w-[45%] h-screen bg-[#ecf0f3] flex flex-col p-10 space-y-8 transition translate-x-0 duration-500 ease-linear':'-left-full'}>
 
 
 
@@ -91,7 +91,7 @@ const Navbar = () => {
 
 
 
-                        <div className='fixed bottom-5 flex flex-col space-y-5'>
+                        <div className='fixed bottom-5 flex flex-col space-y-2'>
 
                             <p className='text-[#5651e5] uppercase'>Let&apos;s Connect</p>
 
