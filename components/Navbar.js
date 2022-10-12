@@ -49,7 +49,7 @@ const Navbar = () => {
 
             <div className={nav?'fixed w-full h-screen bg-black/50 md:hidden':'hidden'}>
 
-                    <div className='w-[75%] md:w-[60%] lg:w-[45%] h-screen bg-[#ecf0f3] flex flex-col justify-between p-7'>
+                    <div className='w-[75%] md:w-[60%] lg:w-[45%] h-screen bg-[#ecf0f3] flex flex-col p-7 space-y-8'>
 
 
 
