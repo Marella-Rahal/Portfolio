@@ -7,7 +7,7 @@ const Main = () => {
   return (
     <div className='pt-52 space-y-3 text-center'>
 
-        <p>
+        <p className='uppercase'>
             Let&apos;s build somthing together
         </p>
         <h1>
