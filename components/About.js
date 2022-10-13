@@ -17,7 +17,7 @@ const About = () => {
 
             <p className='max-w-[90%] md:max-w-[75%]'>
 
-            &#128516; I&apos;m not your normal developer &#128516;<br/>
+            &#128516; I&apos;m not your normal developer <br/>
 
             &#128516; I am currently in my last year in informatics engineering , this is my second year in <span className='text-effectColor'>Front-End</span> Web Development and I just started with <span className='text-effectColor'>deep learning</span> technique.<br/>
 
