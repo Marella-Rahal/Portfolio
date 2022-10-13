@@ -13,7 +13,12 @@ module.exports = {
       lg: '976px',
       xl: '1440px',
     },
-    extend: {},
+    extend: {
+      colors:{
+        textColor:'#1f2937',
+        effectColor:'rgb(255,0,0)'
+      },
+    },
   },
   plugins: [],
 }

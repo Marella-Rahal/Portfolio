@@ -19,23 +19,23 @@ const Navbar = () => {
             <div className='fixed w-full h-20 shadow-xl flex justify-between items-center px-5'>
 
                 
-                <h1 className='text-[#5651e5] drop-shadow-lg shadow-gray-900 font-medium  italic '>MR</h1>
+                <h1 className='text-effectColor drop-shadow-lg shadow-gray-900 font-medium '>MR</h1>
 
 
                 <ul className='hidden uppercase space-x-10 md:flex md:flex-row'>
-                    <li className='hover:text-[#5651e5]'>
+                    <li className='hover:text-effectColor'>
                         <Link href="#">Home</Link>
                     </li>
-                    <li className='hover:text-[#5651e5]'>
+                    <li className='hover:text-effectColor'>
                         <Link href="#">About</Link>
                     </li>
-                    <li className='hover:text-[#5651e5]'>
+                    <li className='hover:text-effectColor'>
                         <Link href="#">Skills</Link>
                     </li>
-                    <li className='hover:text-[#5651e5]'>
+                    <li className='hover:text-effectColor'>
                         <Link href="#">projects</Link>
                     </li>
-                    <li className='hover:text-[#5651e5]'>
+                    <li className='hover:text-effectColor'>
                         <Link href="#">Contact</Link>
                     </li>
                 </ul> 
@@ -55,7 +55,7 @@ const Navbar = () => {
 
                         <div className='flex justify-between items-center'>
 
-                            <h1 className='text-[#5651e5] drop-shadow-lg shadow-gray-900 font-medium  italic'>MR</h1>
+                            <h1 className='text-effectColor drop-shadow-lg shadow-gray-900 font-medium'>MR</h1>
 
                             <div onClick={sideNav} className='rounded-full shadow-xl p-3 hover:scale-[1.1]'>
                                 <AiOutlineClose size={'25px'}/>
@@ -72,19 +72,19 @@ const Navbar = () => {
 
 
                         <ul className='uppercase flex flex-col space-y-5'>
-                            <li className='hover:text-[#5651e5]'>
+                            <li className='hover:text-effectColor'>
                                 <Link href="#">Home</Link>
                             </li>
-                            <li className='hover:text-[#5651e5]'>
+                            <li className='hover:text-effectColor'>
                                 <Link href="#">about</Link>
                             </li>
-                            <li className='hover:text-[#5651e5]'>
+                            <li className='hover:text-effectColor'>
                                 <Link href="#">skills</Link>
                             </li>
-                            <li className='hover:text-[#5651e5]'>
+                            <li className='hover:text-effectColor'>
                                 <Link href="#">projects</Link>
                             </li>
-                            <li className='hover:text-[#5651e5]'>
+                            <li className='hover:text-effectColor'>
                                 <Link href="#">contact</Link>
                             </li>
                         </ul>
@@ -93,7 +93,7 @@ const Navbar = () => {
 
                         <div className='flex flex-col space-y-5'>
 
-                            <p className='text-[#5651e5] uppercase'>Let&apos;s Connect</p>
+                            <p className='text-effectColor uppercase'>Let&apos;s Connect</p>
 
                             <div className='-ml-6 xs:ml-0 flex space-x-2'>
 
