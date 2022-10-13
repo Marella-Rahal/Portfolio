@@ -5,7 +5,7 @@ import {BsGithub,BsFillPersonLinesFill} from 'react-icons/bs';
 
 const Main = () => {
   return (
-    <div className=' h-screen pt-52 space-y-3 text-center'>
+    <div className=' h-screen pt-48 space-y-3 text-center'>
 
         <p className='uppercase'>
             Let&apos;s build somthing together
