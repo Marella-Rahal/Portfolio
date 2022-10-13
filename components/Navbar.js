@@ -16,10 +16,10 @@ const Navbar = () => {
 
     <>
 
-            <div className='fixed w-full h-20 shadow-xl flex justify-between items-center px-5'>
+            <div className='fixed w-full h-20 shadow-lg shadow-shadowColor flex justify-between items-center px-5'>
 
                 
-                <h1 className='text-effectColor drop-shadow-lg shadow-gray-900 font-medium '>MR</h1>
+                <h1 className='text-effectColor drop-shadow-lg shadow-shadowColor font-medium '>MR</h1>
 
 
                 <ul className='hidden uppercase space-x-10 md:flex md:flex-row'>
@@ -49,15 +49,15 @@ const Navbar = () => {
 
             <div className={nav?'fixed left-0 top-0 w-full h-screen bg-black/50 md:hidden':''}>
 
-                    <div className={nav?'fixed left-0 top-0 w-[75%] md:w-[60%] lg:w-[45%] h-screen bg-[#ecf0f3] flex flex-col p-7 space-y-8 ease-in duration-500':'fixed left-[-100%] top-0 w-[75%] md:w-[60%] lg:w-[45%] h-screen bg-[#ecf0f3] flex flex-col p-7 space-y-8'}>
+                    <div className={nav?'fixed left-0 top-0 w-[75%] md:w-[60%] lg:w-[45%] h-screen bg-[#ecf0f3] flex flex-col p-7 space-y-8 ease-in duration-500':'fixed left-[-100%] top-0 w-[75%] md:w-[60%] lg:w-[45%] h-screen bg-[#ecf0f3] flex flex-col p-7 space-y-8 ease-in duration-300'}>
 
 
 
                         <div className='flex justify-between items-center'>
 
-                            <h1 className='text-effectColor drop-shadow-lg shadow-gray-900 font-medium'>MR</h1>
+                            <h1 className='text-effectColor drop-shadow-lg shadow-shadowColor font-medium'>MR</h1>
 
-                            <div onClick={sideNav} className='rounded-full shadow-xl p-3 hover:scale-[1.1]'>
+                            <div onClick={sideNav} className='rounded-full shadow-lg shadow-shadowColor p-3 hover:scale-[1.1]'>
                                 <AiOutlineClose size={'25px'}/>
                             </div>
 
@@ -97,19 +97,19 @@ const Navbar = () => {
 
                             <div className='-ml-6 xs:ml-0 flex space-x-2'>
 
-                                <div className='hover:scale-[1.1] rounded-full shadow-lg p-3'>
+                                <div className='hover:scale-[1.1] rounded-full shadow-lg shadow-shadowColor p-3'>
                                     <FaLinkedinIn size={'20px'}/>
                                 </div>
 
-                                <div className='hover:scale-[1.1] rounded-full shadow-lg p-3'>
+                                <div className='hover:scale-[1.1] rounded-full shadow-lg shadow-shadowColor p-3'>
                                     <BsGithub size={'20px'}/>
                                 </div>
 
-                                <div className='hover:scale-[1.1] rounded-full shadow-lg p-3'>
+                                <div className='hover:scale-[1.1] rounded-full shadow-lg shadow-shadowColor p-3'>
                                     <AiOutlineMail size={'20px'}/>
                                 </div>
 
-                                <div className='hover:scale-[1.1] rounded-full shadow-lg p-3'>
+                                <div className='hover:scale-[1.1] rounded-full shadow-lg shadow-shadowColor p-3'>
                                     <BsFillPersonLinesFill size={'20px'}/>
                                 </div>
 

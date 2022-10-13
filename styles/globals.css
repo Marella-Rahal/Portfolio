@@ -17,7 +17,7 @@
   }
   
   body {
-    @apply bg-[#ecf0f3] text-textColor tracking-wide
+    @apply bg-bgColor text-textColor tracking-wide
   }
 
   h1, h2, h3, h4, h5, h6 {
@@ -37,7 +37,7 @@
   }
 
   button {
-    @apply shadow-xl shadow-gray-400 rounded-xl uppercase bg-gradient-to-r from-red-800 to-red-500 text-white
+    @apply shadow-xl shadow-shadowColor rounded-xl uppercase bg-gradient-to-r from-gradientFrom to-gradientTo text-white
   }
 }
 
