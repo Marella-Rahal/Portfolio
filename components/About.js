@@ -36,8 +36,8 @@ const About = () => {
 
         <div className='hidden md:flex mt-5 p-3 rounded-xl shadow-lg shadow-shadowColor w-fit h-fit hover:scale-[1.1]'>
 
-            {/* <Image className='rounded-xl' src="/../public/MR.webp" alt="" width={'400'} height={'500'}/> */}
-            <img className='rounded-xl w-[500px] h-[510px]' src="MR.webp" alt=""/>
+            <Image className='rounded-xl' src="/../public/MR.webp" alt="" width={'400'} height={'500'}/>
+            
 
         </div>
 
@@ -45,9 +45,8 @@ const About = () => {
 
         <div className='md:hidden mt-5 p-3 rounded-full shadow-lg shadow-shadowColor w-fit h-fit hover:scale-[1.1]'>
 
-            {/* <Image className='rounded-full' src="/../public/MR.webp" alt="" width={'210'} height={'210'}/> */}
+            <Image className='rounded-full' src="/../public/MR.webp" alt="" width={'210'} height={'210'}/>
 
-            <img className='rounded-full w-[190px]  h-[190px] xs:w-[220px] xs:h-[220px]' src="MR.webp" alt=""/>
 
         </div>
       
