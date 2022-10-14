@@ -16,7 +16,7 @@ const Navbar = () => {
 
     <>
 
-            <div className='bg-navBgColor fixed z-[100] w-full h-20 shadow-md shadow-shadowColor flex justify-between items-center px-5'>
+            <div className='bg-bgColor/50 fixed z-[100] w-full h-20 shadow-md shadow-shadowColor flex justify-between items-center px-5'>
 
                 
                 <h1 className='text-effectColor drop-shadow-lg shadow-shadowColor font-medium '>MR</h1>
