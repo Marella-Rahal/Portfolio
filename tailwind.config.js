@@ -16,6 +16,7 @@ module.exports = {
     extend: {
       colors:{
         bgColor:'#ecf0f3',
+        navBgColor:'rgba(236,240,243,0.6)',
         textColor:'#1f2937',
         effectColor:'rgb(255,0,0)',
         shadowColor:'#9ca3af',
