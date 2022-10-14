@@ -3,7 +3,7 @@ import Image from 'next/image';
 
 const About = () => {
   return (
-    <div className='h-screen px-10 py-20 flex flex-col md:flex-row'>
+    <div id="about" className='h-screen px-10 py-20 flex flex-col md:flex-row'>
 
         {/* //todo1 */}
 
@@ -50,6 +50,19 @@ const About = () => {
             <img className='rounded-2xl w-[180px]  h-[180px] xs:w-[250px] xs:h-[200px]' src="MR.webp" alt=""/>
 
         </div>
+
+        <style jsx>
+            {`
+                @media (max-height:400px){
+
+                    #about {
+                        margin-bottom:270px
+                    }
+
+                }
+            
+            `}
+        </style>
       
     </div>
   )

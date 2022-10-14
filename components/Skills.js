@@ -3,7 +3,7 @@ import React from 'react';
 
 const Skills = () => {
   return (
-    <div className='h-screen px-10 py-20 mt-48 xs:mt-0 space-y-7'>
+    <div id="skills" className='h-screen px-10 py-20 mt-48 xs:mt-0 space-y-7'>
       <p className='text-effectColor tracking-widest uppercase'>skills</p>
       <h2>What I Can Do</h2>
       <div className='grid gap-10 grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4'>
@@ -68,6 +68,17 @@ const Skills = () => {
         </div>
 
       </div>
+      <style jsx>
+      {` 
+          @media (max-height:400px){
+
+              #skills {
+                margin-bottom:400px
+              }
+
+          }    
+      `}
+      </style>
     </div>
   )
 }
