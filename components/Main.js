@@ -6,7 +6,7 @@ import {BsGithub,BsFillPersonLinesFill} from 'react-icons/bs';
 const Main = () => {
   return (
 
-        <div id="main" className=' h-screen pt-44 space-y-3 text-center'>
+        <div className='pt-40 space-y-3 text-center'>
 
             <p className='uppercase'>
                 Let&apos;s build somthing together
@@ -18,44 +18,29 @@ const Main = () => {
             <h1>
                 A Front-End Web Developer
             </h1>
-            <p className='max-w-xl m-auto'>
+            <p className='max-w-xl mx-auto'>
                 I&apos;m a front-end web developer specializing in building exceptional digital experiences. Currently, I&apos;m focused on building responsive front-end web applications while learning the deep learning technique
             </p>
 
             <div className='flex justify-center space-x-5 pt-3'>
 
-                <div className='hover:scale-[1.1] rounded-full shadow-lg shadow-shadowColor p-3'>
+                <div className='hover:scale-[1.2] rounded-full shadow-lg shadow-shadowColor p-3'>
                     <FaLinkedinIn size={'20px'}/>
                 </div>
 
-                <div className='hover:scale-[1.1] rounded-full shadow-lg shadow-shadowColor p-3'>
+                <div className='hover:scale-[1.2] rounded-full shadow-lg shadow-shadowColor p-3'>
                     <BsGithub size={'20px'}/>
                 </div>
 
-                <div className='hover:scale-[1.1] rounded-full shadow-lg shadow-shadowColor p-3'>
+                <div className='hover:scale-[1.2] rounded-full shadow-lg shadow-shadowColor p-3'>
                     <AiOutlineMail size={'20px'}/>
                 </div>
 
-                <div className='hover:scale-[1.1] rounded-full shadow-lg shadow-shadowColor p-3'>
+                <div className='hover:scale-[1.2] rounded-full shadow-lg shadow-shadowColor p-3'>
                     <BsFillPersonLinesFill size={'20px'}/>
                 </div>
 
             </div>
-
-            <style jsx>
-            {`
-
-        
-                @media (max-height:400px){
-
-                    #main {
-                        margin-bottom:100px
-                    }
-
-                }
-            
-            `}
-            </style>
         
         </div>
   )

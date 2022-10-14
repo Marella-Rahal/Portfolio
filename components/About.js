@@ -1,9 +1,8 @@
 import React from 'react';
-import Image from 'next/image';
 
 const About = () => {
   return (
-    <div id="about" className='h-screen px-10 py-20 flex flex-col md:flex-row'>
+    <div className='px-10 pt-20 flex flex-col md:flex-row'>
 
         {/* //todo1 */}
 
@@ -36,7 +35,6 @@ const About = () => {
 
         <div className='hidden md:flex mt-5 p-3 rounded-xl shadow-lg shadow-shadowColor w-fit h-fit hover:scale-[1.1]'>
 
-            {/* <Image className='rounded-xl' src="/../public/MR.webp" alt="" width={'400'} height={'500'}/> */}
             <img className='rounded-xl w-[700px] h-[450px] lg:w-[450px]' src="MR.webp" alt=""/>
 
         </div>
@@ -45,24 +43,9 @@ const About = () => {
 
         <div className='md:hidden mt-5 p-3 rounded-2xl mx-auto shadow-lg shadow-shadowColor w-fit h-fit hover:scale-[1.1]'>
 
-            {/* <Image className='rounded-full' src="/../public/MR.webp" alt="" width={'210'} height={'210'}/> */}
-
             <img className='rounded-2xl w-[180px]  h-[180px] xs:w-[250px] xs:h-[200px]' src="MR.webp" alt=""/>
 
         </div>
-
-        <style jsx>
-            {`
-                @media (max-height:400px){
-
-                    #about {
-                        margin-bottom:270px
-                    }
-
-                }
-            
-            `}
-        </style>
       
     </div>
   )
