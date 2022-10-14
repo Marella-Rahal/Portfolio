@@ -43,7 +43,7 @@ const Navbar = () => {
 
                 <ul className='hidden uppercase space-x-10 md:flex md:flex-row'>
                     <li className='hover:text-effectColor'>
-                        <Link href="/#main">Home</Link>
+                        <Link href="/">Home</Link>
                     </li>
                     <li className='hover:text-effectColor'>
                         <Link href="/#about">About</Link>
@@ -92,7 +92,7 @@ const Navbar = () => {
 
                         <ul className='uppercase flex flex-col space-y-5'>
                             <li className='hover:text-effectColor' onClick={sideNav}>
-                                <Link href="/#main">Home</Link>
+                                <Link href="/">Home</Link>
                             </li>
                             <li className='hover:text-effectColor' onClick={sideNav}>
                                 <Link href="/#about">about</Link>
@@ -114,14 +114,18 @@ const Navbar = () => {
 
                             <p className='text-effectColor uppercase'>Let&apos;s Connect</p>
 
-                            <div className='-ml-6 xs:ml-0 flex space-x-2'>
+                            <div id="connectIcons" className='flex space-x-2'>
 
                                 <div className='hover:scale-[1.1] rounded-full shadow-lg shadow-shadowColor p-3'>
-                                    <FaLinkedinIn size={'20px'}/>
+                                    <Link href="https://www.linkedin.com/in/marella-rahal-bb4a60224/">
+                                        <FaLinkedinIn size={'20px'}/>
+                                    </Link>
                                 </div>
 
                                 <div className='hover:scale-[1.1] rounded-full shadow-lg shadow-shadowColor p-3'>
-                                    <BsGithub size={'20px'}/>
+                                    <Link href="https://github.com/Marella-Rahal">
+                                        <BsGithub size={'20px'}/>
+                                    </Link>
                                 </div>
 
                                 <div className='hover:scale-[1.1] rounded-full shadow-lg shadow-shadowColor p-3'>
@@ -133,6 +137,25 @@ const Navbar = () => {
                                 </div>
 
                             </div>
+
+
+                            {/* //todo some styling for connect menu  for mobile devices*/}
+                            <style jsx>{`
+                            
+                                @media (max-width:330px){
+
+                                    #connectIcons{
+
+                                        margin-inline:-27px;
+                                        justify-content:space-between;
+                                        
+
+                                    }
+
+                                }
+                            
+                            `}
+                            </style>
 
                         </div>
 

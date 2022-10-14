@@ -2,6 +2,7 @@ import React from 'react';
 import {AiOutlineMail} from 'react-icons/ai';
 import {FaLinkedinIn} from 'react-icons/fa';
 import {BsGithub,BsFillPersonLinesFill} from 'react-icons/bs';
+import Link from 'next/link';
 
 const Contact = () => {
   return (
@@ -29,11 +30,15 @@ const Contact = () => {
                 <div className='flex justify-between  pt-3'>
 
                     <div className='hover:scale-[1.2] rounded-full shadow-lg shadow-shadowColor p-3'>
-                        <FaLinkedinIn size={'20px'}/>
+                        <Link href="https://www.linkedin.com/in/marella-rahal-bb4a60224/">
+                            <FaLinkedinIn size={'20px'}/>
+                        </Link>
                     </div>
 
                     <div className='hover:scale-[1.2] rounded-full shadow-lg shadow-shadowColor p-3'>
-                        <BsGithub size={'20px'}/>
+                        <Link href="https://github.com/Marella-Rahal">
+                            <BsGithub size={'20px'}/>
+                        </Link>
                     </div>
 
                     <div className='hover:scale-[1.2] rounded-full shadow-lg shadow-shadowColor p-3'>

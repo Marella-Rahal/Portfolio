@@ -2,11 +2,11 @@ import React from 'react';
 import {AiOutlineMail} from 'react-icons/ai';
 import {FaLinkedinIn} from 'react-icons/fa';
 import {BsGithub,BsFillPersonLinesFill} from 'react-icons/bs';
-
+import Link from 'next/link';
 const Main = () => {
   return (
 
-        <div id="main" className='pt-40 space-y-3 text-center'>
+        <div className='pt-40 space-y-3 text-center'>
 
             <p className='uppercase'>
                 Let&apos;s build somthing together
@@ -25,11 +25,15 @@ const Main = () => {
             <div className='flex justify-center space-x-5 pt-3'>
 
                 <div className='hover:scale-[1.2] rounded-full shadow-lg shadow-shadowColor p-3'>
-                    <FaLinkedinIn size={'20px'}/>
+                    <Link href="https://www.linkedin.com/in/marella-rahal-bb4a60224/">
+                        <FaLinkedinIn size={'20px'}/>
+                    </Link>
                 </div>
 
                 <div className='hover:scale-[1.2] rounded-full shadow-lg shadow-shadowColor p-3'>
-                    <BsGithub size={'20px'}/>
+                    <Link href="https://github.com/Marella-Rahal">
+                        <BsGithub size={'20px'}/>
+                    </Link>
                 </div>
 
                 <div className='hover:scale-[1.2] rounded-full shadow-lg shadow-shadowColor p-3'>

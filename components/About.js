@@ -1,4 +1,5 @@
 import React from 'react';
+import Link from 'next/link';
 
 const About = () => {
   return (
@@ -25,7 +26,9 @@ const About = () => {
             &#128516; I have the <span className='text-effectColor'>desire</span> , the <span className='text-effectColor'>passion</span> and the ability to <span className='text-effectColor'>learn quickly</span>.
             </p>
 
-            <p className='underline cursor-pointer hover:text-effectColor'>Check out some of my latest projects</p>
+            <p className='underline cursor-pointer hover:text-effectColor'>
+                <Link href="/#projects">Check out some of my latest projects</Link>
+            </p>
 
         </div>
 
