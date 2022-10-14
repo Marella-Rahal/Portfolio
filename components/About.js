@@ -2,7 +2,7 @@ import React from 'react';
 
 const About = () => {
   return (
-    <div className='px-10 pt-20 flex flex-col md:flex-row'>
+    <div id="about" className='px-10 pt-20 flex flex-col md:flex-row'>
 
         {/* //todo1 */}
 

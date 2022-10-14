@@ -1,5 +1,5 @@
 import Link from 'next/link';
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import {AiOutlineClose,AiOutlineMail} from 'react-icons/ai';
 import {GiHamburgerMenu} from 'react-icons/gi';
 import {FaLinkedinIn} from 'react-icons/fa';
@@ -7,16 +7,35 @@ import {BsGithub,BsFillPersonLinesFill} from 'react-icons/bs';
 const Navbar = () => {
 
   const [nav,setNav]=useState(false);
-  
+  const [shadow,setShadow]=useState(false);
+
+
   const sideNav=()=>{
     setNav(prev=>!prev)
   }
+
+  useEffect(()=>{
+
+    const handleShadow=()=>{
+
+        if(window.scrollY>=90){
+            setShadow(true)
+        }else{
+            setShadow(false)
+        }
+
+    }
+     
+    window.addEventListener('scroll',handleShadow);
+
+  },[])
+  
 
   return (
 
     <>
 
-            <div className='bg-bgColor/50 fixed z-[100] w-full h-20 shadow-md shadow-shadowColor flex justify-between items-center px-5'>
+            <div className={shadow?'bg-bgColor/50 fixed z-[100] w-full h-20 shadow-md shadow-shadowColor flex justify-between items-center px-5':'bg-bgColor/50 fixed z-[100] w-full h-20 flex justify-between items-center px-5'}>
 
                 
                 <h1 className='text-effectColor drop-shadow-lg shadow-shadowColor font-medium '>MR</h1>
@@ -24,19 +43,19 @@ const Navbar = () => {
 
                 <ul className='hidden uppercase space-x-10 md:flex md:flex-row'>
                     <li className='hover:text-effectColor'>
-                        <Link href="#">Home</Link>
+                        <Link href="/#main">Home</Link>
                     </li>
                     <li className='hover:text-effectColor'>
-                        <Link href="#">About</Link>
+                        <Link href="/#about">About</Link>
                     </li>
                     <li className='hover:text-effectColor'>
-                        <Link href="#">Skills</Link>
+                        <Link href="/#skills">Skills</Link>
                     </li>
                     <li className='hover:text-effectColor'>
-                        <Link href="#">projects</Link>
+                        <Link href="/#projects">projects</Link>
                     </li>
                     <li className='hover:text-effectColor'>
-                        <Link href="#">Contact</Link>
+                        <Link href="/#contact">Contact</Link>
                     </li>
                 </ul> 
 
@@ -72,20 +91,20 @@ const Navbar = () => {
 
 
                         <ul className='uppercase flex flex-col space-y-5'>
-                            <li className='hover:text-effectColor'>
-                                <Link href="#">Home</Link>
+                            <li className='hover:text-effectColor' onClick={sideNav}>
+                                <Link href="/#main">Home</Link>
                             </li>
-                            <li className='hover:text-effectColor'>
-                                <Link href="#">about</Link>
+                            <li className='hover:text-effectColor' onClick={sideNav}>
+                                <Link href="/#about">about</Link>
                             </li>
-                            <li className='hover:text-effectColor'>
-                                <Link href="#">skills</Link>
+                            <li className='hover:text-effectColor' onClick={sideNav}>
+                                <Link href="/#skills">skills</Link>
                             </li>
-                            <li className='hover:text-effectColor'>
-                                <Link href="#">projects</Link>
+                            <li className='hover:text-effectColor' onClick={sideNav}>
+                                <Link href="/#projects">projects</Link>
                             </li>
-                            <li className='hover:text-effectColor'>
-                                <Link href="#">contact</Link>
+                            <li className='hover:text-effectColor' onClick={sideNav}>
+                                <Link href="/#contact">contact</Link>
                             </li>
                         </ul>
 
