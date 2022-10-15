@@ -1,5 +1,6 @@
 import Link from 'next/link';
 import React, { useEffect, useState } from 'react';
+import { useRouter } from 'next/router';
 import {AiOutlineClose,AiOutlineMail} from 'react-icons/ai';
 import {GiHamburgerMenu} from 'react-icons/gi';
 import {FaLinkedinIn} from 'react-icons/fa';
@@ -8,11 +9,19 @@ const Navbar = () => {
 
   const [nav,setNav]=useState(false);
   const [shadow,setShadow]=useState(false);
+  const [navBg,setNavBg]=useState('#ecf0f3');
+  const [navText,setNavText]=useState('#1f2937');
+  const router=useRouter();
+
+//   console.log(router)
 
 
   const sideNav=()=>{
     setNav(prev=>!prev)
   }
+
+
+   //* tha shadow effect when scrolling the navbar* */   
 
   useEffect(()=>{
 
@@ -29,13 +38,33 @@ const Navbar = () => {
     window.addEventListener('scroll',handleShadow);
 
   },[])
+
+   //*changing the navbar background color and text color* */   
+
+  useEffect(()=>{
+
+    if(router.route=="/shoppingo" || router.route=="/landingPage"){
+
+        // console.log(router)
+
+        setNavBg('transparent');
+        setNavText('#1f2937');
+
+    }else{
+
+        // console.log(router)
+        setNavBg('#ecf0f3');
+        setNavText('#1f2937');
+    }
+
+  },[router])
   
 
   return (
 
     <>
 
-            <div className={shadow?'bg-bgColor/50 fixed z-[100] w-full h-20 shadow-md shadow-shadowColor flex justify-between items-center px-5':'bg-bgColor/50 fixed z-[100] w-full h-20 flex justify-between items-center px-5'}>
+            <div style={{text:`${navText}`,backgroundColor:`${navBg}`}} className={shadow?'fixed z-[100] w-full h-20 shadow-md shadow-shadowColor flex justify-between items-center px-5':'fixed z-[100] w-full h-20 flex justify-between items-center px-5'}>
 
                 
                 <h1 className='text-effectColor drop-shadow-lg shadow-shadowColor font-medium '>MR</h1>
@@ -66,7 +95,7 @@ const Navbar = () => {
             </div>
 
 
-            <div className={nav?'fixed z-[100] left-0 top-0 w-full h-screen bg-black/50 md:hidden':''}>
+            <div className={nav?'fixed z-[100] left-0 top-0 w-full h-screen bg-black/50 overflow-y-auto md:hidden':''}>
 
                     <div className={nav?'fixed z-[100] left-0 top-0 w-[75%] md:w-[60%] lg:w-[45%] h-screen bg-[#ecf0f3] flex flex-col p-7 space-y-8 ease-in duration-500':'fixed z-[100] left-[-100%] top-0 w-[75%] md:w-[60%] lg:w-[45%] h-screen bg-[#ecf0f3] flex flex-col p-7 space-y-8 ease-in duration-300'}>
 
