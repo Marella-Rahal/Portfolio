@@ -1,4 +1,5 @@
 import Head from 'next/head'
+import Navbar from '../components/Navbar'
 import '../styles/globals.css'
 
 function MyApp({ Component, pageProps }) {
@@ -7,6 +8,7 @@ function MyApp({ Component, pageProps }) {
       <Head>
         <title>Portfolio | Marella Rahal</title>
       </Head>
+      <Navbar/>
       <Component {...pageProps} />
     </>
   ) 
