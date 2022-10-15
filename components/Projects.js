@@ -13,7 +13,6 @@ const Projects = () => {
 
         <ProjectItem title='Shoppingo' tech='React.Js' img='shoppingo.png' url='/shoppingo' />
         <ProjectItem title='Landing Page' tech='Next.Js' img='landing-page.png' url='/landingPage' /> 
-        <ProjectItem title='Portfolio' tech='Next.Js' img='portfolio.png' url='/portfolio' /> 
 
       </div>
       
