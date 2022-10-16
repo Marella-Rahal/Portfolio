@@ -95,9 +95,9 @@ const Navbar = () => {
             </div>
 
 
-            <div className={nav?'fixed z-[100] left-0 top-0 w-full h-screen bg-black/50 overflow-y-auto md:hidden':''}>
+            <div className={nav?'fixed z-[100] left-0 top-0 w-full h-screen bg-black/50 md:hidden':''}>
 
-                    <div className={nav?'fixed z-[100] left-0 top-0 w-[75%] md:w-[60%] lg:w-[45%] h-screen bg-[#ecf0f3] flex flex-col p-7 space-y-8 ease-in duration-500':'fixed z-[100] left-[-100%] top-0 w-[75%] md:w-[60%] lg:w-[45%] h-screen bg-[#ecf0f3] flex flex-col p-7 space-y-8 ease-in duration-300'}>
+                    <div className={nav?'fixed z-[100] left-0 top-0 w-[75%] md:w-[60%] lg:w-[45%] h-screen bg-[#ecf0f3] flex flex-col p-7 space-y-8 ease-in duration-500 overflow-y-auto':'fixed z-[100] left-[-100%] top-0 w-[75%] md:w-[60%] lg:w-[45%] h-screen bg-[#ecf0f3] flex flex-col p-7 space-y-8 ease-in duration-300 overflow-y-auto'}>
 
 
 
