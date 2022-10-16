@@ -32,11 +32,15 @@ const shoppingo = () => {
                     Overview
                 </h2>
 
-                <p>
-                    Labore adipisicing voluptate velit ea cillum anim dolore cillum excepteur. Sint anim fugiat nostrud eiusmod fugiat Lorem magna amet veniam aliqua quis est quis. Ad culpa consequat qui incididunt velit ullamco commodo mollit eiusmod 
+                <p className='mt-4'>
+                    Personal assistant for shopping and budget management.<br/>
+                    It is just a static front-end , not fully responsive so it&apos;s better to try it on your laptop.<br/>
+                    The website built to allow people to compare prices for the same piece of clothing in different stores and to find out the nearest store that sells this piece, all this through the map.<br/>
+                    It also allows the user to upgrade his account to a seller after verification and add products.<br/>
+                    On the other hand , it has a section to help people know their financial expenses and remind them of their payments.   
                 </p>
 
-                <div className='mt-4'>
+                <div className='mt-5'>
                     <button className='uppercase text-white mr-4 px-5 py-2 hover:scale-[1.1]'>
                         <Link href="https://shoppingo.vercel.app/">
                             demo                        

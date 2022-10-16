@@ -32,11 +32,11 @@ const landingPage = () => {
                     Overview
                 </h2>
 
-                <p>
-                    Labore adipisicing voluptate velit ea cillum anim dolore cillum excepteur. Sint anim fugiat nostrud eiusmod fugiat Lorem magna amet veniam aliqua quis est quis. Ad culpa consequat qui incididunt velit ullamco commodo mollit eiusmod 
+                <p className='mt-4'>
+                   Responsive landing page 
                 </p>
 
-                <div className='mt-4'>
+                <div className='mt-5'>
                     <button className='uppercase text-white mr-4 px-5 py-2 hover:scale-[1.1]'>
                         <Link href="https://responsive-landing-page-five.vercel.app/">
                             demo                        
