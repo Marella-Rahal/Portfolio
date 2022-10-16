@@ -139,7 +139,7 @@ const Navbar = () => {
 
 
 
-                        <div className='flex flex-col space-y-5'>
+                        <div className='pt-[30px] flex flex-col space-y-5'>
 
                             <p className='text-effectColor uppercase'>Let&apos;s Connect</p>
 
