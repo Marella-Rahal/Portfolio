@@ -1,13 +1,12 @@
 import React from 'react';
 import {RiRadioButtonFill} from 'react-icons/ri';
 import Link from 'next/link';
-import {motion} from 'framer-motion';
-import { indexVariants } from '.';
+
 
 const landingPage = () => {
    
   return (
-        <motion.div variants={indexVariants} initial='hidden' animate='visible'>
+        <div>
         
             <div className='relative shadow-xl shadow-shadowColor'>
                 <img className='h-[350px] w-full opacity-30' src='landing-page.png' alt=""/>
@@ -90,7 +89,7 @@ const landingPage = () => {
 
             </div>
 
-        </motion.div>
+        </div>
   )
 }
 

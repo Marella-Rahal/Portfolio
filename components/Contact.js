@@ -3,9 +3,6 @@ import {AiOutlineMail} from 'react-icons/ai';
 import {FaLinkedinIn} from 'react-icons/fa';
 import {BsGithub,BsFillPersonLinesFill} from 'react-icons/bs';
 import Link from 'next/link';
-import {motion} from 'framer-motion';
-import { buttonVariants } from './Main';
-import { buttonVariants as buttonVariants1 } from './Skills';
 
 const Contact = () => {
   return (
@@ -20,9 +17,7 @@ const Contact = () => {
             {/* left */}
             <div className='flex flex-col p-5 rounded-xl shadow-xl shadow-shadowColor space-y-5'>
 
-                <motion.img className='rounded-xl hover:scale-[1.1]' src="https://images.unsplash.com/photo-1616763355548-1b606f439f86?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHx0b3BpYy1mZWVkfDE1MXxhZXU2ckwtajZld3x8ZW58MHx8fHw%3D&auto=format&fit=crop&w=500&q=60" alt="" 
-                    variants={buttonVariants1}
-                    whileHover="hover"
+                <img className='rounded-xl hover:scale-[1.1]' src="https://images.unsplash.com/photo-1616763355548-1b606f439f86?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHx0b3BpYy1mZWVkfDE1MXxhZXU2ckwtajZld3x8ZW58MHx8fHw%3D&auto=format&fit=crop&w=500&q=60" alt="" 
                 />
 
                 <h2>Marella Rahal</h2>
@@ -35,37 +30,29 @@ const Contact = () => {
 
                 <div className='flex justify-between  pt-3'>
 
-                    <motion.div className='hover:scale-[1.2] rounded-full shadow-lg shadow-shadowColor p-3'
-                        variants={buttonVariants}
-                        whileHover="hover"
+                    <div className='hover:scale-[1.2] rounded-full shadow-lg shadow-shadowColor p-3'
                     >
                         <Link href="https://www.linkedin.com/in/marella-rahal-bb4a60224/">
                             <FaLinkedinIn size={'20px'}/>
                         </Link>
-                    </motion.div>
+                    </div>
 
-                    <motion.div className='hover:scale-[1.2] rounded-full shadow-lg shadow-shadowColor p-3'
-                        variants={buttonVariants}
-                        whileHover="hover"
+                    <div className='hover:scale-[1.2] rounded-full shadow-lg shadow-shadowColor p-3'
                     >
                         <Link href="https://github.com/Marella-Rahal">
                             <BsGithub size={'20px'}/>
                         </Link>
-                    </motion.div>
+                    </div>
 
-                    <motion.div className='hover:scale-[1.2] rounded-full shadow-lg shadow-shadowColor p-3'
-                        variants={buttonVariants}
-                        whileHover="hover"
+                    <div className='hover:scale-[1.2] rounded-full shadow-lg shadow-shadowColor p-3'
                     >
                         <AiOutlineMail size={'20px'}/>
-                    </motion.div>
+                    </div>
 
-                    <motion.div className='hover:scale-[1.2] rounded-full shadow-lg shadow-shadowColor p-3'
-                        variants={buttonVariants}
-                        whileHover="hover"
+                    <div className='hover:scale-[1.2] rounded-full shadow-lg shadow-shadowColor p-3'
                     >
                         <BsFillPersonLinesFill size={'20px'}/>
-                    </motion.div>
+                    </div>
 
                 </div>
 
