@@ -19,7 +19,7 @@ const Main = () => {
                 A Front-End Web Developer
             </h1>
             <p className='max-w-xl mx-auto'>
-                I&apos;m a front-end web developer specializing in building exceptional digital experiences. Currently, I&apos;m focused on building responsive front-end web applications while learning the deep learning technique
+                I&apos;m a front-end web developer specializing in building exceptional digital experiences. Currently, I&apos;m focused on building responsive front-end web applications while learning the machine learning technique
             </p>
 
             <div className='flex justify-center space-x-5 pt-3'>

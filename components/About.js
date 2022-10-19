@@ -19,7 +19,7 @@ const About = () => {
 
             &#128516; I&apos;m not your normal developer <br/>
 
-            &#128516; I am currently in my last year in informatics engineering , this is my second year in <span className='text-effectColor'>Front-End</span> Web Development and I just started with <span className='text-effectColor'>deep learning</span> technique.<br/>
+            &#128516; I am currently in my last year in informatics engineering , this is my second year in <span className='text-effectColor'>Front-End</span> Web Development and I just started with <span className='text-effectColor'>machine learning</span> technique.<br/>
 
             &#128516; I previously participated in the university programming competition ( <span className='text-effectColor'>ICPC</span> ) for two years.<br/>
 
