@@ -3,6 +3,17 @@ import {AiOutlineMail} from 'react-icons/ai';
 import {FaLinkedinIn} from 'react-icons/fa';
 import {BsGithub,BsFillPersonLinesFill} from 'react-icons/bs';
 import Link from 'next/link';
+import {motion} from 'framer-motion'
+
+export const buttonVariants={
+    hover:{
+        scale:1.2,
+        transition:{
+            yoyo:Infinity
+        }
+    }
+}
+
 const Main = () => {
   return (
 
@@ -24,25 +35,37 @@ const Main = () => {
 
             <div className='flex justify-center space-x-5 pt-3'>
 
-                <div className='hover:scale-[1.2] rounded-full shadow-lg shadow-shadowColor p-3'>
+                <motion.div className='hover:scale-[1.2] rounded-full shadow-lg shadow-shadowColor p-3'
+                    variants={buttonVariants}
+                    whileHover="hover"
+                >
                     <Link href="https://www.linkedin.com/in/marella-rahal-bb4a60224/">
                         <FaLinkedinIn size={'20px'}/>
                     </Link>
-                </div>
+                </motion.div>
 
-                <div className='hover:scale-[1.2] rounded-full shadow-lg shadow-shadowColor p-3'>
+                <motion.div className='hover:scale-[1.2] rounded-full shadow-lg shadow-shadowColor p-3'
+                    variants={buttonVariants}
+                    whileHover="hover"
+                >
                     <Link href="https://github.com/Marella-Rahal">
                         <BsGithub size={'20px'}/>
                     </Link>
-                </div>
+                </motion.div>
 
-                <div className='hover:scale-[1.2] rounded-full shadow-lg shadow-shadowColor p-3'>
+                <motion.div className='hover:scale-[1.2] rounded-full shadow-lg shadow-shadowColor p-3'
+                    variants={buttonVariants}
+                    whileHover="hover"
+                >
                     <AiOutlineMail size={'20px'}/>
-                </div>
+                </motion.div>
 
-                <div className='hover:scale-[1.2] rounded-full shadow-lg shadow-shadowColor p-3'>
+                <motion.div className='hover:scale-[1.2] rounded-full shadow-lg shadow-shadowColor p-3'
+                    variants={buttonVariants}
+                    whileHover="hover"
+                >
                     <BsFillPersonLinesFill size={'20px'}/>
-                </div>
+                </motion.div>
 
             </div>
         

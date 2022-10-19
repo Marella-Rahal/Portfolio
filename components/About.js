@@ -1,5 +1,7 @@
 import React from 'react';
 import Link from 'next/link';
+import {motion} from 'framer-motion';
+import { buttonVariants } from './Skills';
 
 const About = () => {
   return (
@@ -36,19 +38,25 @@ const About = () => {
 
         {/* my photo for big screen */}
 
-        <div className='hidden md:flex mt-5 p-3 rounded-xl shadow-lg shadow-shadowColor w-fit h-fit hover:scale-[1.1]'>
+        <motion.div className='hidden md:flex mt-5 p-3 rounded-xl shadow-lg shadow-shadowColor w-fit h-fit hover:scale-[1.1]'
+            variants={buttonVariants}
+            whileHover="hover"
+        >
 
             <img className='rounded-xl w-[700px] h-[450px] lg:w-[450px]' src="MR.webp" alt=""/>
 
-        </div>
+        </motion.div>
 
         {/* my photo for small screen  */}
 
-        <div className='md:hidden mt-5 p-3 rounded-2xl mx-auto shadow-lg shadow-shadowColor w-fit h-fit hover:scale-[1.1]'>
+        <motion.div className='md:hidden mt-5 p-3 rounded-2xl mx-auto shadow-lg shadow-shadowColor w-fit h-fit hover:scale-[1.1]'
+            variants={buttonVariants}
+            whileHover="hover"
+        >
 
             <img className='rounded-2xl w-[180px]  h-[180px] xs:w-[250px] xs:h-[200px]' src="MR.webp" alt=""/>
 
-        </div>
+        </motion.div>
       
     </div>
   )

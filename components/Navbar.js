@@ -5,6 +5,24 @@ import {AiOutlineClose,AiOutlineMail} from 'react-icons/ai';
 import {GiHamburgerMenu} from 'react-icons/gi';
 import {FaLinkedinIn} from 'react-icons/fa';
 import {BsGithub,BsFillPersonLinesFill} from 'react-icons/bs';
+import {motion} from 'framer-motion';
+import { buttonVariants } from './Main';
+
+
+const navVariants={
+    hidden:{
+        opacity:0,
+        y:"-100%"
+    },
+    visible:{
+        opacity:1,
+        y:0,
+        transition:{
+            duration:0.5
+        }
+    }
+}
+
 const Navbar = () => {
 
   const [nav,setNav]=useState(false);
@@ -64,7 +82,13 @@ const Navbar = () => {
 
     <>
 
-            <div style={{text:`${navText}`,backgroundColor:`${navBg}`}} className={shadow?'fixed z-[100] w-full h-20 shadow-md shadow-shadowColor flex justify-between items-center px-5':'fixed z-[100] w-full h-20 flex justify-between items-center px-5'}>
+            <motion.div style={{text:`${navText}`,backgroundColor:`${navBg}`}} className={shadow?'fixed z-[100] w-full h-20 shadow-md shadow-shadowColor flex justify-between items-center px-5':'fixed z-[100] w-full h-20 flex justify-between items-center px-5'}
+            
+            variants={navVariants}
+            initial="hidden"
+            animate="visible"
+            
+            >
 
                 
                 <h1 className='text-effectColor drop-shadow-lg shadow-shadowColor font-medium '>MR</h1>
@@ -92,7 +116,7 @@ const Navbar = () => {
                    <GiHamburgerMenu size={'30px'}/>
                 </div>    
             
-            </div>
+            </motion.div>
 
 
             <div className={nav?'fixed z-[100] left-0 top-0 w-full h-screen bg-black/50 md:hidden':''}>
@@ -145,25 +169,37 @@ const Navbar = () => {
 
                             <div id="connectIcons" className='flex space-x-2'>
 
-                                <div className='hover:scale-[1.1] rounded-full shadow-lg shadow-shadowColor p-3'>
+                                <motion.div className='hover:scale-[1.1] rounded-full shadow-lg shadow-shadowColor p-3'
+                                    variants={buttonVariants}
+                                    whileHover="hover"
+                                >
                                     <Link href="https://www.linkedin.com/in/marella-rahal-bb4a60224/">
                                         <FaLinkedinIn size={'20px'}/>
                                     </Link>
-                                </div>
+                                </motion.div>
 
-                                <div className='hover:scale-[1.1] rounded-full shadow-lg shadow-shadowColor p-3'>
+                                <motion.div className='hover:scale-[1.1] rounded-full shadow-lg shadow-shadowColor p-3'
+                                    variants={buttonVariants}
+                                    whileHover="hover"
+                                >
                                     <Link href="https://github.com/Marella-Rahal">
                                         <BsGithub size={'20px'}/>
                                     </Link>
-                                </div>
+                                </motion.div>
 
-                                <div className='hover:scale-[1.1] rounded-full shadow-lg shadow-shadowColor p-3'>
+                                <motion.div className='hover:scale-[1.1] rounded-full shadow-lg shadow-shadowColor p-3'
+                                    variants={buttonVariants}
+                                    whileHover="hover"
+                                >
                                     <AiOutlineMail size={'20px'}/>
-                                </div>
+                                </motion.div>
 
-                                <div className='hover:scale-[1.1] rounded-full shadow-lg shadow-shadowColor p-3'>
+                                <motion.div className='hover:scale-[1.1] rounded-full shadow-lg shadow-shadowColor p-3'
+                                    variants={buttonVariants}
+                                    whileHover="hover"
+                                >
                                     <BsFillPersonLinesFill size={'20px'}/>
-                                </div>
+                                </motion.div>
 
                             </div>
 
