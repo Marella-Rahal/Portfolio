@@ -30,11 +30,13 @@ function MyApp({ Component, pageProps ,router}) {
         {/* <meta name="viewport" content="width=device-width, initial-scale=1.0"/> */}
       </Head>
 
-      <Navbar/>
+      
 
       <AnimatePresence exitBeforeEnter>
 
         <motion.div key={router.route} variants={pageVariants} initial="hidden" animate="visible" exit="exit">
+
+          <Navbar/>
 
           <Component {...pageProps} />
 
