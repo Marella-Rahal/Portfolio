@@ -44,7 +44,7 @@ const Navbar = () => {
 
   useEffect(()=>{
 
-    if(router.route=="/shoppingo" || router.route=="/landingPage"){
+    if(router.asPath=="/shoppingo" || router.asPath=="/landingPage"){
 
         // console.log(router)
 
