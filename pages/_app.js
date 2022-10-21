@@ -8,14 +8,11 @@ const pageVariants={
 
   hidden:{
     opacity:0,
-    x:"100%"
   },
   visible:{
-    x:"0",
     opacity:1
   },
   exit:{
-    x:"-100%",
     opacity:0
   }
 
