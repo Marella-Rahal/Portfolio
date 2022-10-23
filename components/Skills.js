@@ -13,7 +13,7 @@ const Skills = () => {
         >
             {/* <Image src='/../public/html.png' alt="" width={'50'} height={'50'}/> */}
             <img className='w-[55px]' src='html.png' alt=''/>
-            <h3>Html</h3>
+            <h3 className='text-end'>Html</h3>
         </div>
 
         {/* css */}
@@ -21,7 +21,7 @@ const Skills = () => {
         >
             {/* <Image src='/../public/css.png' alt="" width={'50'} height={'50'}/> */}
             <img className='w-[55px]' src='css.png' alt=''/>
-            <h3>CSS</h3>
+            <h3 className='text-end'>CSS</h3>
         </div>
 
 
@@ -30,7 +30,7 @@ const Skills = () => {
         >
             {/* <Image src='/../public/tailwind.png' alt="" width={'50'} height={'50'}/> */}
             <img className='w-[55px]' src='tailwind.png' alt=''/>
-            <h3>Tailwind</h3>
+            <h3 className='text-end'>Tailwind</h3>
         </div>
 
         
@@ -39,7 +39,7 @@ const Skills = () => {
         >
             {/* <Image src='/../public/javascript.png' alt="" width={'50'} height={'50'}/> */}
             <img className='w-[55px]' src='javascript.png' alt=''/>
-            <h3>Javascript</h3>
+            <h3 className='text-end'>Javascript</h3>
         </div>
 
 
@@ -48,7 +48,7 @@ const Skills = () => {
         >
             {/* <Image src='/../public/react.png' alt="" width={'50'} height={'50'}/> */}
             <img className='w-[55px]' src='react.png' alt=''/>
-            <h3>React</h3>
+            <h3 className='text-end'>React</h3>
         </div>
 
         {/* redux */}
@@ -56,7 +56,16 @@ const Skills = () => {
         >
             {/* <Image src='/../public/redux.png' alt="" width={'50'} height={'50'}/> */}
             <img className='w-[55px]' src='redux.png' alt=''/>
-            <h3>Redux</h3>
+            <h3 className='text-end'>Redux</h3>
+        </div>
+
+
+        {/* framer-motion */}
+        <div className='p-[10px] xs:p-7 flex items-center justify-between rounded-xl shadow-lg shadow-shadowColor hover:scale-[1.1]'
+        >
+            {/* <Image src='/../public/framer-motion.png' alt="" width={'50'} height={'50'}/> */}
+            <img className='w-[55px]' src='framer-motion.png' alt=''/>
+            <h3 className='text-end'>Framer-Motion</h3>
         </div>
 
         {/* next */}
@@ -64,7 +73,15 @@ const Skills = () => {
         >
             {/* <Image src='/../public/nextjs.png' alt="" width={'50'} height={'50'}/> */}
             <img className='w-[55px]' src='nextjs.png' alt=''/>
-            <h3>Next</h3>
+            <h3 className='text-end'>Next</h3>
+        </div>
+
+        {/* MapBox */}
+        <div className='p-[10px] xs:p-7 flex items-center justify-between rounded-xl shadow-lg shadow-shadowColor hover:scale-[1.1]'
+        >
+            {/* <Image src='/../public/mapbox.png' alt="" width={'50'} height={'50'}/> */}
+            <img className='w-[55px]' src='mapbox.png' alt=''/>
+            <h3 className='text-end'>MapBox</h3>
         </div>
 
         {/* github */}
@@ -72,7 +89,7 @@ const Skills = () => {
         >
             {/* <Image src='/../public/github.png' alt="" width={'50'} height={'50'}/> */}
             <img className='w-[55px]' src='github.png' alt=''/>
-            <h3>Github</h3>
+            <h3 className='text-end'>Github</h3>
         </div>
 
       </div>
