@@ -46,7 +46,9 @@ const Main = () => {
 
                 <div className='hover:scale-[1.2] rounded-full shadow-lg shadow-shadowColor p-3'
                 >
-                    <BsFillPersonLinesFill size={'20px'}/>
+                    <Link href="tel:+963937-720-508">
+                        <BsFillPersonLinesFill size={'20px'}/>
+                    </Link>
                 </div>
 
             </div>
