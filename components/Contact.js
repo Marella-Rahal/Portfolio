@@ -1,10 +1,56 @@
-import React from 'react';
+import React, { useState } from 'react';
 import {AiOutlineMail} from 'react-icons/ai';
 import {FaLinkedinIn} from 'react-icons/fa';
 import {BsGithub,BsFillPersonLinesFill} from 'react-icons/bs';
 import Link from 'next/link';
+// import axios from 'axios';
+import emailjs from '@emailjs/browser';
 
 const Contact = () => {
+
+    // const [name,setName]=useState('');
+    // const [phone,setPhone]=useState('');
+    // const [email,setEmail]=useState('');
+    // const [subject,setSubject]=useState('');
+    // const [message,setMessage]=useState('');
+
+
+    const sendMail=(e)=>{
+
+        e.preventDefault();
+
+        emailjs.sendForm('service_amfb8jq','template_nyq1aab', e.target , 'c2xqf6d9xHSQ_1A51')
+        .then((result) => {
+            e.target.reset();
+            console.log(result.text);
+        }, (error) => {
+            console.log(error.text);
+        });
+
+
+        // axios.post('/api/email',{
+        //     info:{
+        //         name:name,
+        //         phone:phone,
+        //         email:email,
+        //         subject:subject,
+        //         message:message
+        //     } 
+        // }).then(res=>{
+        //     setName('');
+        //     setPhone('');
+        //     setEmail('');
+        //     setSubject('');
+        //     setMessage('');
+        //     alert('Done')
+        // }).catch(err=>{
+        //     alert(err);
+        // })
+
+    }
+
+
+
   return (
     <div id="contact" className='px-10 pt-20 space-y-7'>
 
@@ -63,18 +109,22 @@ const Contact = () => {
             </div>
 
             {/* right */}
-            <form className='w-full flex flex-col p-5 rounded-xl shadow-xl shadow-shadowColor space-y-5'>
+            <form className='w-full flex flex-col p-5 rounded-xl shadow-xl shadow-shadowColor space-y-5' onSubmit={sendMail}>
 
                 {/* first row */}
                 <div className='flex space-x-3'>
 
                     <div className='w-[50%] flex flex-col justify-between space-y-3'>
                         <label className='font-bold uppercase'>Name</label>
-                        <input className='border-2 border-shadowColor p-3 rounded-lg shadow-lg shadow-shadowColor focus:outline-none' type="text"/>
+                        <input className='border-2 border-shadowColor p-3 rounded-lg shadow-lg shadow-shadowColor focus:outline-none' name="name" type="text" required 
+                        // onChange={(e)=>setName(e.target.value)}
+                        />
                     </div>
                     <div className='w-[50%] flex flex-col justify-between space-y-3'>
                         <label className='font-bold uppercase'>Phone Number</label>
-                        <input className='border-2 border-shadowColor p-3 rounded-lg shadow-lg shadow-shadowColor focus:outline-none' type="text"/>
+                        <input className='border-2 border-shadowColor p-3 rounded-lg shadow-lg shadow-shadowColor focus:outline-none' name="phone" type="text" required 
+                        // onChange={(e)=>setPhone(e.target.value)}
+                        />
                     </div>
 
                 </div>
@@ -83,21 +133,27 @@ const Contact = () => {
 
                 <div className='flex flex-col space-y-3'>
                         <label className='font-bold uppercase'>Email</label>
-                        <input className='border-2 border-shadowColor p-3 rounded-lg shadow-lg shadow-shadowColor focus:outline-none' type="email"/>
+                        <input className='border-2 border-shadowColor p-3 rounded-lg shadow-lg shadow-shadowColor focus:outline-none' name="email" type="email" required 
+                        // onChange={(e)=>setEmail(e.target.value)}
+                        />
                 </div>
 
                 {/* third */}
 
                 <div className='flex flex-col space-y-3'>
                         <label className='font-bold uppercase'>subject</label>
-                        <input className='border-2 border-shadowColor p-3 rounded-lg shadow-lg shadow-shadowColor focus:outline-none' type="text"/>
+                        <input className='border-2 border-shadowColor p-3 rounded-lg shadow-lg shadow-shadowColor focus:outline-none' name="subject" type="text" required 
+                        // onChange={(e)=>setSubject(e.target.value)}
+                        />
                 </div>
 
                 {/* fourth */}
 
                 <div className='flex flex-col space-y-3'>
                         <label className='font-bold uppercase'>message</label>
-                        <textarea  className='border-2 border-shadowColor p-3 rounded-lg shadow-lg shadow-shadowColor focus:outline-none' rows={5}/>
+                        <textarea  className='border-2 border-shadowColor p-3 rounded-lg shadow-lg shadow-shadowColor focus:outline-none' rows={5} name="message" required 
+                        // onChange={(e)=>setMessage(e.target.value)}
+                        />
                 </div>
 
                 {/* fifth */}
