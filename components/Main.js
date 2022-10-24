@@ -41,7 +41,10 @@ const Main = () => {
 
                 <div className='hover:scale-[1.2] rounded-full shadow-lg shadow-shadowColor p-3'
                 >
-                    <AiOutlineMail size={'20px'}/>
+                    <Link href="sms:+963937-720-508">
+                        <AiOutlineMail size={'20px'}/>
+                    </Link>
+                    
                 </div>
 
                 <div className='hover:scale-[1.2] rounded-full shadow-lg shadow-shadowColor p-3'
