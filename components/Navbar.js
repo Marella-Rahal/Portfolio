@@ -70,7 +70,9 @@ const Navbar = () => {
             >
 
                 
-                <h1 className='text-effectColor drop-shadow-lg shadow-shadowColor font-medium '>MR</h1>
+                {/* <h1 className='text-effectColor drop-shadow-lg shadow-shadowColor font-medium '>MR</h1> */}
+                <img src="logo.svg" className='w-20 md:w-[110px]'/>
+
 
 
                 <ul className='hidden uppercase space-x-10 md:flex md:flex-row'>
@@ -106,7 +108,9 @@ const Navbar = () => {
 
                         <div className='flex justify-between items-center'>
 
-                            <h1 className='text-effectColor drop-shadow-lg shadow-shadowColor font-medium'>MR</h1>
+                            {/* <h1 className='text-effectColor drop-shadow-lg shadow-shadowColor font-medium'>MR</h1> */}
+
+                            <img src="logo.svg" className='w-20 md:w-[110px]'/>
 
                             <div onClick={sideNav} className='rounded-full shadow-lg shadow-shadowColor p-3 hover:scale-[1.1]'>
                                 <AiOutlineClose size={'25px'}/>
