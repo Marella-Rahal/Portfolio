@@ -13,7 +13,7 @@ const ProjectItem = ({title,tech,img,url}) => {
 
             <p>{tech}</p>
 
-            <div className='bg-bgColor text-textColor font-bold rounded-xl  cursor-pointer py-3 hover:scale-[1.1]'>
+            <div className='bg-bgColor text-textColor font-bold rounded-xl  cursor-pointer py-3 px-3 hover:scale-[1.1]'>
                 <Link href={url}>More Info</Link>
             </div>
             
