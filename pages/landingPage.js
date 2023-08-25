@@ -15,12 +15,12 @@ const landingPage = () => {
                         Landing Page
                     </h2>
                     <p className='mt-2 pl-3'>
-                        Next.Js
+                        NextJs
                     </p>
                 </div>
             </div>
 
-            <div className='flex flex-col space-y-5 md:space-y-0 md:flex-row my-20 mx-[10%] justify-between'>
+            <div className='flex flex-col space-y-5 md:space-y-0 md:flex-row my-20 mx-[10%] justify-between md:items-center'>
 
                 {/* left */}
                 <div className='md:w-[50%]'>
@@ -59,21 +59,20 @@ const landingPage = () => {
                 <div className='flex flex-col  rounded-xl shadow-xl shadow-shadowColor p-5 space-y-2'>
 
                     <p className='font-bold text-center'>Technologies</p>
-
+                    
+                    <div className='flex items-center'>
+                        <RiRadioButtonFill/> 
+                        <p className='ml-2'>Javascript</p>
+                    </div>
 
                     <div className='flex items-center'>
                         <RiRadioButtonFill/> 
-                        <p className='ml-2'>Next.Js</p>
+                        <p className='ml-2'>NextJs</p>
                     </div>
 
                     <div className='flex items-center'>
                         <RiRadioButtonFill/> 
                         <p className='ml-2'>Tailwind CSS</p>
-                    </div>
-
-                    <div className='flex items-center'>
-                        <RiRadioButtonFill/> 
-                        <p className='ml-2'>Javascript</p>
                     </div>
 
 

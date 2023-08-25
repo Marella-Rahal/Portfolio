@@ -70,34 +70,34 @@ const Contact = () => {
 
                 <p>Front-End Developer</p>
 
-                <p>I am available for freelance or part-time positions.<br/>Contact me  and let&apos;s talk.</p>
+                <p>I am available for freelance , part-time positions or full-time positions.<br/>Contact me  and let&apos;s talk.</p>
 
                 <p className='text-effectColor uppercase'>connect with me</p>
 
                 <div className='flex justify-between  pt-3'>
 
-                    <div className='hover:scale-[1.2] rounded-full shadow-lg shadow-shadowColor p-3'
+                    <div className='hover:scale-[1.1] cursor-pointer rounded-full shadow-lg shadow-shadowColor p-3'
                     >
                         <Link href="https://www.linkedin.com/in/marella-rahal-bb4a60224/">
                             <FaLinkedinIn size={'20px'}/>
                         </Link>
                     </div>
 
-                    <div className='hover:scale-[1.2] rounded-full shadow-lg shadow-shadowColor p-3'
+                    <div className='hover:scale-[1.1] cursor-pointer rounded-full shadow-lg shadow-shadowColor p-3'
                     >
                         <Link href="https://github.com/Marella-Rahal">
                             <BsGithub size={'20px'}/>
                         </Link>
                     </div>
 
-                    <div className='hover:scale-[1.2] rounded-full shadow-lg shadow-shadowColor p-3'
+                    <div className='hover:scale-[1.1] cursor-pointer rounded-full shadow-lg shadow-shadowColor p-3'
                     >
                         <Link href="sms:+963937-720-508">
                             <AiOutlineMail size={'20px'}/>
                         </Link>
                     </div>
 
-                    <div className='hover:scale-[1.2] rounded-full shadow-lg shadow-shadowColor p-3'
+                    <div className='hover:scale-[1.1] cursor-pointer rounded-full shadow-lg shadow-shadowColor p-3'
                     >
                         <Link href="tel:+963937-720-508">
                             <BsFillPersonLinesFill size={'20px'}/>

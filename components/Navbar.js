@@ -44,7 +44,7 @@ const Navbar = () => {
 
   useEffect(()=>{
 
-    if(router.asPath=="/shoppingo" || router.asPath=="/landingPage"){
+    if(router.asPath=="/shoppingo" || router.asPath=="/landingPage" || router.asPath=="/wepay"){
 
         // console.log(router)
 
@@ -152,21 +152,21 @@ const Navbar = () => {
 
                             <div id="connectIcons" className='flex space-x-2'>
 
-                                <div className='hover:scale-[1.1] rounded-full shadow-lg shadow-shadowColor p-3'
+                                <div className='hover:scale-[1.1] cursor-pointer rounded-full shadow-lg shadow-shadowColor p-3'
                                 >
                                     <Link href="https://www.linkedin.com/in/marella-rahal-bb4a60224/">
                                         <FaLinkedinIn size={'20px'}/>
                                     </Link>
                                 </div>
 
-                                <div className='hover:scale-[1.1] rounded-full shadow-lg shadow-shadowColor p-3'
+                                <div className='hover:scale-[1.1] cursor-pointer rounded-full shadow-lg shadow-shadowColor p-3'
                                 >
                                     <Link href="https://github.com/Marella-Rahal">
                                         <BsGithub size={'20px'}/>
                                     </Link>
                                 </div>
 
-                                <div className='hover:scale-[1.1] rounded-full shadow-lg shadow-shadowColor p-3'
+                                <div className='hover:scale-[1.1] cursor-pointer rounded-full shadow-lg shadow-shadowColor p-3'
                                 >
                                     <Link href="sms:+963937-720-508">
                                         <AiOutlineMail size={'20px'}/>
@@ -174,7 +174,7 @@ const Navbar = () => {
                                     
                                 </div>
 
-                                <div className='hover:scale-[1.1] rounded-full shadow-lg shadow-shadowColor p-3'
+                                <div className='hover:scale-[1.1] cursor-pointer rounded-full shadow-lg shadow-shadowColor p-3'
                                 >
                                     <Link href="tel:+963937-720-508">
                                         <BsFillPersonLinesFill size={'20px'}/>

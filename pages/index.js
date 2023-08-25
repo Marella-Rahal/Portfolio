@@ -17,7 +17,7 @@ export default function Home() {
         <Contact/>
 
         <div className="flex justify-center my-20">
-            <div className="p-3 rounded-full shadow-xl shadow-shadowColor cursor-pointer hover:scale-[1.2]"
+            <div className="p-3 rounded-full shadow-xl shadow-shadowColor cursor-pointer hover:scale-[1.1]"
             >
                 <Link href="/"><HiOutlineChevronDoubleUp className="text-effectColor" size={30}/></Link>
             </div>
