@@ -39,7 +39,7 @@ const wepay = () => {
 
                 A personalized QR code, unique to each user, is housed in their profile, alongside other information. The profile also contains a promotion button, allowing users to elevate their status to a merchant, only if their account balance exceeds 5,000 Syrian pounds.<br/>
 
-                Upon becoming a merchant, their store's location is showcased on the map along with other stores, informing users of the merchant's acceptance of payments through WePay.<br/>
+                Upon becoming a merchant, their store&apos;s location is showcased on the map along with other stores, informing users of the merchant&apos;s acceptance of payments through WePay.<br/>
 
                 The platform also features a dedicated budget management section. This area hosts a comprehensive record of all user activities, complete with a chart illustrating expenses over the current year, month, or day, within the WePay site.<br/>
 

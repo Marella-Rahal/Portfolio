@@ -20,9 +20,9 @@ const Main = () => {
                 A Front-End Web Developer
             </h1>
             <p className='max-w-2xl mx-auto p-3'>
-                I'm a web front-end developer with a passion for crafting engaging and interactive user experiences. My journey in web development started with learning various technologies and frameworks that empower modern web applications. Currently, I'm focused on mastering Next.js to become a full-stack developer. The versatility and performance enhancements that Next.js offers are what excite me as I aim to create seamless, server-rendered applications.
+                I&apos;m a web front-end developer with a passion for crafting engaging and interactive user experiences. My journey in web development started with learning various technologies and frameworks that empower modern web applications. Currently, I&apos;m focused on mastering Next.js to become a full-stack developer. The versatility and performance enhancements that Next.js offers are what excite me as I aim to create seamless, server-rendered applications.
                 <br/>
-                Aside from my web development journey, I'm deeply intrigued by the world of machine learning and deep learning. The potential to build intelligent systems that can learn and adapt is truly captivating to me. I believe that combining my web development skills with insights from machine learning will open doors to innovative and dynamic projects.
+                Aside from my web development journey, I&apos;m deeply intrigued by the world of machine learning and deep learning. The potential to build intelligent systems that can learn and adapt is truly captivating to me. I believe that combining my web development skills with insights from machine learning will open doors to innovative and dynamic projects.
             </p>
 
             <div className='flex justify-center space-x-5 pt-3'>
