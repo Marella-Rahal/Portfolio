@@ -2,12 +2,9 @@
 @tailwind components;
 @tailwind utilities;
 
-
-@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700;800;900&display=swap');
-
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700;800;900&display=swap");
 
 @layer base {
-
   * {
     box-sizing: border-box;
     -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
@@ -16,36 +13,39 @@
   html {
     scroll-behavior: smooth;
     overflow-x: hidden;
-    font-family: 'Raleway', sans-serif;
-  } 
-  
-  body {
-    @apply bg-bgColor text-textColor tracking-wide
+    font-family: "Raleway", sans-serif;
   }
 
-  h1, h2, h3, h4, h5, h6 {
-    @apply font-bold
+  body {
+    @apply bg-bgColor text-textColor tracking-wide;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    @apply font-bold;
   }
 
   h1 {
-    @apply text-4xl sm:text-5xl md:text-6xl font-[Raleway]
+    @apply text-4xl sm:text-5xl md:text-6xl font-[Raleway];
   }
 
   h2 {
-    @apply text-3xl sm:text-4xl
+    @apply text-3xl sm:text-4xl;
   }
 
   h3 {
-    @apply text-2xl sm:text-3xl
+    @apply text-2xl sm:text-3xl;
   }
-  
+
   li {
-    @apply cursor-pointer
+    @apply cursor-pointer;
   }
 
   button {
-    @apply shadow-xl shadow-shadowColor rounded-xl uppercase bg-gradient-to-r from-gradientFrom to-gradientTo text-white outline-none
+    @apply shadow-xl shadow-shadowColor rounded-xl uppercase bg-gradient-to-r from-gradientFrom to-gradientTo text-white outline-none;
   }
 }
-
-
