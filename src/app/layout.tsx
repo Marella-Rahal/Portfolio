@@ -2,7 +2,6 @@ import "@/styles/globals.css";
 import { Raleway } from "next/font/google";
 import Navbar from "@/components/Navbar";
 import type { Metadata } from "next";
-import FramerMotion from "@/components/FramerMotion";
 
 const inter = Raleway({ subsets: ["latin"] });
 
@@ -25,7 +24,7 @@ export default function RootLayout({
     <html lang="en">
       <body className={inter.className}>
         <Navbar />
-        <FramerMotion>{children}</FramerMotion>
+        {children}
       </body>
     </html>
   );

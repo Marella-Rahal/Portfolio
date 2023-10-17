@@ -21,3 +21,8 @@ type projectDetail = {
   demo: string;
   video: string;
 };
+
+type motionType = {
+  children: React.ReactNode;
+  index: number;
+};

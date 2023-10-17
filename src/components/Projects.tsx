@@ -1,6 +1,7 @@
 import React from "react";
 import ProjectItem from "./ProjectItem";
 import { projects } from "@/data/data";
+import ProjectsMotion from "./FramerMotion/ProjectsMotion";
 
 const Projects = () => {
   return (
@@ -12,13 +13,14 @@ const Projects = () => {
       <div className="grid gap-10 grid-cols-1 md:grid-cols-2 xl:p-10">
         {projects.map((one, index) => {
           return (
-            <ProjectItem
-              key={index}
-              title={one.title}
-              tech={one.tech}
-              img={one.img}
-              url={one.url}
-            />
+            <ProjectsMotion index={index}>
+              <ProjectItem
+                title={one.title}
+                tech={one.tech}
+                img={one.img}
+                url={one.url}
+              />
+            </ProjectsMotion>
           );
         })}
       </div>
