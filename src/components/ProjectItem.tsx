@@ -4,9 +4,9 @@ import React from "react";
 
 const ProjectItem = ({ title, tech, img, url }: project) => {
   return (
-    <div className="p-5 relative rounded-xl shadow-xl shadow-shadowColor group hover:bg-gradient-to-r from-gradientFrom to-gradientTo h-[300px] hover:scale-[1.03] tranistion ease-linear duration-100 sm:h-[400px]">
+    <div className="relative rounded-lg shadow-xl shadow-shadowColor group hover:bg-gradient-to-r from-gradientFrom to-gradientTo h-[300px] hover:scale-[1.03] tranistion ease-linear duration-100 sm:h-[400px]">
       <Image
-        className="w-full h-[260px] sm:h-[360px] rounded-xl group-hover:opacity-5"
+        className="rounded-lg shadow-xl group-hover:opacity-5"
         src={img}
         alt={title}
         placeholder="blur"
@@ -15,7 +15,7 @@ const ProjectItem = ({ title, tech, img, url }: project) => {
         priority
       />
 
-      <div className="hidden group-hover:flex flex-col space-y-2 items-center text-bgColor text-center absolute left-[50%] top-[50%] translate-x-[-50%] translate-y-[-50%]">
+      <div className="hidden group-hover:flex flex-col space-y-2 items-center text-bgColor text-center absolute left-[50%] top-[50%] translate-x-[-50%] translate-y-[-50%] w-full p-2">
         <p className="text-xl font-bold">{title}</p>
 
         <p>{tech}</p>
