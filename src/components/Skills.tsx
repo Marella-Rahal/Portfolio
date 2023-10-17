@@ -9,7 +9,7 @@ const Skills = () => {
       <div className="grid gap-10 grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
         {skills.map((one, index) => {
           return (
-            <SkillsMotion index={index}>
+            <SkillsMotion key={index}>
               <div className="p-[10px] xs:p-7 flex items-center justify-between rounded-xl shadow-lg shadow-shadowColor hover:scale-[1.03] transition ease-linear duration-150">
                 <Image
                   src={one.url}

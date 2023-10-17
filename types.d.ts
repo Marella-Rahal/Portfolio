@@ -24,5 +24,5 @@ type projectDetail = {
 
 type motionType = {
   children: React.ReactNode;
-  index: number;
+  index?: number;
 };
