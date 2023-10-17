@@ -56,7 +56,7 @@ const Project = ({ params: { projectName } }: propsType) => {
 
           <h2>Overview</h2>
 
-          <ul className="mt-4 list-disc space-y-2">
+          <ul className="mt-4 ml-4 list-disc space-y-2">
             {displayedProject.description.map((one, index) => {
               return <li key={index}>{one}</li>;
             })}
