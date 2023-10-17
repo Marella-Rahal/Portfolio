@@ -7,6 +7,7 @@ const SkillsMotion = ({ children }: motionType) => {
       initial={{ opacity: 0, scale: 0 }}
       whileInView={{ opacity: 1, scale: 1 }}
       transition={{ duration: 0.7 }}
+      viewport={{ once: true }}
     >
       {children}
     </motion.div>

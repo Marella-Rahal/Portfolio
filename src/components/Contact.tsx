@@ -48,6 +48,7 @@ const Contact = () => {
           initial={{ opacity: 0, x: "-100%" }}
           whileInView={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.7 }}
+          viewport={{ once: true }}
           className="flex flex-col p-5 rounded-xl shadow-xl shadow-shadowColor space-y-5 border-[3px]"
         >
           <img
@@ -101,6 +102,7 @@ const Contact = () => {
           initial={{ opacity: 0, x: "100%" }}
           whileInView={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.7 }}
+          viewport={{ once: true }}
           onSubmit={sendMail}
           className="w-full flex flex-col p-5 rounded-xl shadow-xl shadow-shadowColor space-y-5 border-[3px]"
         >

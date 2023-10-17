@@ -7,6 +7,7 @@ const AboutLeftMotion = ({ children }: motionType) => {
       initial={{ opacity: 0, x: "-100%" }}
       whileInView={{ opacity: 1, x: 0 }}
       transition={{ duration: 0.7 }}
+      viewport={{ once: true }}
       className="flex flex-col items-start space-y-5"
     >
       {children}
