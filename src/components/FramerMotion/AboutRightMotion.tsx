@@ -8,7 +8,11 @@ const AboutRightMotion = ({ children }: motionType) => {
       whileInView={{ opacity: 1, x: 0 }}
       transition={{ duration: 0.7 }}
       viewport={{ once: true }}
-      className="relative w-[250px] h-[250px] lg:w-[350px] lg:h-[350px] my-10 md:mb-10 md:mt-0 rounded-xl shadow-lg shadow-shadowColor hover:scale-[1.03] transition ease-linear duration-150 self-center"
+      whileHover={{
+        scale: 1.03,
+        transition: { ease: "linear", duration: 0.3 },
+      }}
+      className="relative w-[250px] h-[250px] lg:w-[350px] lg:h-[350px] my-10 md:mb-10 md:mt-0 rounded-xl shadow-lg shadow-shadowColor self-center"
     >
       {children}
     </motion.div>
