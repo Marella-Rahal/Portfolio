@@ -34,7 +34,7 @@ const Contact = () => {
   };
 
   return (
-    <div id="contact" className="px-10 pt-20 space-y-7">
+    <div id="contact" className="px-3 xl:px-10 pt-20 space-y-7">
       <p className="text-effectColor tracking-widest uppercase">contact</p>
 
       <h2>Get In Touch</h2>

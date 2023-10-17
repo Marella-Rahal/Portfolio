@@ -6,7 +6,7 @@ const About = () => {
   return (
     <div
       id="about"
-      className="px-10 pt-20 flex flex-col md:flex-row md:justify-between md:items-start"
+      className="px-3 xl:px-10 pt-20 flex flex-col md:flex-row md:justify-between md:items-start"
     >
       {/* //todo1 */}
 

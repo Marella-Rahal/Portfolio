@@ -3,7 +3,7 @@ import Image from "next/image";
 import SkillsMotion from "./FramerMotion/SkillsMotion";
 const Skills = () => {
   return (
-    <div id="skills" className="px-10 pt-20 space-y-7 select-none">
+    <div id="skills" className="px-3 xl:px-10 pt-20 space-y-7 select-none">
       <p className="text-effectColor tracking-widest uppercase">skills</p>
       <h2>What I Can Do</h2>
       <div className="grid gap-10 grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">

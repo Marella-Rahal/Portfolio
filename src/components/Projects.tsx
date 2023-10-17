@@ -5,12 +5,14 @@ import ProjectsMotion from "./FramerMotion/ProjectsMotion";
 
 const Projects = () => {
   return (
-    <div id="projects" className="px-10 pt-20 space-y-7">
-      <p className="text-effectColor uppercase tracking-widest">projects</p>
+    <div id="projects" className="pt-20 space-y-7">
+      <p className="text-effectColor uppercase tracking-widest px-3 xl:px-10">
+        projects
+      </p>
 
-      <h2>What I&apos;v Built</h2>
+      <h2 className="px-3 xl:px-10">What I&apos;v Built</h2>
 
-      <div className="grid gap-10 grid-cols-1 md:grid-cols-2 xl:p-10">
+      <div className="grid gap-10 grid-cols-1 md:grid-cols-2 px-3 pb-10 xl:p-10 overflow-hidden">
         {projects.map((one, index) => {
           return (
             <ProjectsMotion key={index} index={index}>
