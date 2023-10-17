@@ -15,7 +15,7 @@ const Home = () => {
       <Projects />
       <Contact />
 
-      <div className="flex justify-center my-20">
+      <div className="flex justify-center mb-10">
         <div className="p-3 rounded-full shadow-xl shadow-shadowColor cursor-pointer hover:scale-[1.03] transition ease-linear duration-75">
           <Link href="/#main">
             <HiOutlineChevronDoubleUp className="text-effectColor" size={30} />

@@ -5,6 +5,7 @@ import { BsGithub, BsFillPersonLinesFill } from "react-icons/bs";
 import Link from "next/link";
 import { FormEvent, useState } from "react";
 import emailjs from "@emailjs/browser";
+import { motion } from "framer-motion";
 
 const Contact = () => {
   const [pending, setPending] = useState<boolean>(false);
@@ -34,14 +35,21 @@ const Contact = () => {
   };
 
   return (
-    <div id="contact" className="px-3 xl:px-10 pt-20 space-y-7">
-      <p className="text-effectColor tracking-widest uppercase">contact</p>
+    <div id="contact" className="pt-20 space-y-7">
+      <p className="text-effectColor tracking-widest uppercase px-3 xl:px-10">
+        contact
+      </p>
 
-      <h2>Get In Touch</h2>
+      <h2 className="px-3 xl:px-10">Get In Touch</h2>
 
-      <div className="flex flex-col space-y-5 md:space-y-0 md:space-x-5 md:flex-row">
+      <div className="flex flex-col space-y-10 md:space-y-0 md:space-x-5 md:flex-row overflow-hidden pb-10 px-3 xl:px-10">
         {/* left */}
-        <div className="flex flex-col p-5 rounded-xl shadow-xl shadow-shadowColor space-y-5">
+        <motion.div
+          initial={{ opacity: 0, x: "-100%" }}
+          whileInView={{ opacity: 1, x: 0 }}
+          transition={{ duration: 0.7 }}
+          className="flex flex-col p-5 rounded-xl shadow-xl shadow-shadowColor space-y-5 border-[3px]"
+        >
           <img
             className="rounded-xl hover:scale-[1.03] transition ease-linear duration-150"
             src="https://images.unsplash.com/photo-1616763355548-1b606f439f86?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHx0b3BpYy1mZWVkfDE1MXxhZXU2ckwtajZld3x8ZW58MHx8fHw%3D&auto=format&fit=crop&w=500&q=60"
@@ -86,12 +94,15 @@ const Contact = () => {
               </Link>
             </div>
           </div>
-        </div>
+        </motion.div>
 
         {/* right */}
-        <form
+        <motion.form
+          initial={{ opacity: 0, x: "100%" }}
+          whileInView={{ opacity: 1, x: 0 }}
+          transition={{ duration: 0.7 }}
           onSubmit={sendMail}
-          className="w-full flex flex-col p-5 rounded-xl shadow-xl shadow-shadowColor space-y-5"
+          className="w-full flex flex-col p-5 rounded-xl shadow-xl shadow-shadowColor space-y-5 border-[3px]"
         >
           {/* first row */}
           <div className="flex space-x-3">
@@ -165,7 +176,7 @@ const Contact = () => {
               "send message"
             )}
           </button>
-        </form>
+        </motion.form>
       </div>
     </div>
   );
