@@ -3,8 +3,9 @@ import { RiRadioButtonFill } from "react-icons/ri";
 import Link from "next/link";
 import { fetchProject } from "@/lib/fetchProject";
 import Image from "next/image";
-import { projectDetail, projects } from "@/data/data";
+import { projectDetail } from "@/data/data";
 import type { Metadata } from "next";
+import EnterExitMotion from "@/components/FramerMotion/EnterExitMotion";
 
 type propsType = {
   params: {
@@ -32,7 +33,7 @@ export async function generateStaticParams() {
 const Project = ({ params: { projectName } }: propsType) => {
   const displayedProject = fetchProject(projectName);
   return (
-    <div>
+    <EnterExitMotion>
       <div className="relative w-full h-[375px] shadow-xl shadow-shadowColor flex">
         <Image
           className="opacity-30"
@@ -100,7 +101,7 @@ const Project = ({ params: { projectName } }: propsType) => {
       <div className="my-20 mx-[12%] underline hover:text-effectColor">
         <Link href="/#projects">Back</Link>
       </div>
-    </div>
+    </EnterExitMotion>
   );
 };
 
