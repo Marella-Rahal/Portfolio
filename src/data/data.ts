@@ -32,12 +32,20 @@ export const skills: skill[] = [
     url: "/redux.png",
   },
   {
+    name: "Git",
+    url: "/git.svg",
+  },
+  {
     name: "Framer Motion",
     url: "/framer-motion.png",
   },
   {
     name: "MapBox",
     url: "/mapbox.png",
+  },
+  {
+    name: "Sanity CMS",
+    url: "/sanity.svg",
   },
 ];
 
